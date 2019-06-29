@@ -1,0 +1,45 @@
+<div class="container">
+    <form [formGroup]="feedbackform" (ngSubmit)="submitEntry()" novalidate>
+      <div *ngIf="validMessage != ''">
+        <h3 class="has-info">{{validMessage}}</h3>
+      </div>
+      <div class="form-group">
+        Introduction <br>
+        The purpose of this weekly assessment tool is to provide you with a mechanism to perform self-analysis so you can reflect on your general progression throughout your training journey.<br>
+        <span class="space"> </span>
+        &nbsp;
+        <label>Name</label>
+        <input type="text" id= "halfsize" class="form-control" formControlName="name" required autofocus/>
+      </div>
+      <div class="form-group">
+        <label>How well have you been able to use the technologies and tools you have learnt this week to solve a problem? <br> Rate yourself between 1 and 10</label>
+        <input type="text" id= "halfsize" class="form-control" formControlName="solveProblem" required/>
+      </div>
+      <div class="form-group">
+        <label>How well would you be able to explain the concepts you have learnt this week to a peer?<br> Rate yourself between 1 and 10</label>
+        <input type="text" id= "halfsize" class="form-control" formControlName="explainConcept" required/>
+      </div>
+      <div class="form-group">
+        <label>How well have you been able to present ideas and concepts within group work this week?<br>Rate yourself between 1 and 10</label>
+        <input type="text" id= "halfsize" class="form-control" formControlName="presentIdeas" required/>
+      </div>
+      <div class="form-group">
+        <label>How well have you managed your time effectively this week?<br>Rate yourself between 1 and 10</label>
+        <input type="text" id= "halfsize" class="form-control" formControlName="timeManagement" required/>
+      </div>
+      <div class="form-group">
+        <label>Strengths<br>What went well this week?</label>
+        <input type="text" id= "halfsize" class="form-control" formControlName="strengths" required/>
+      </div>
+      <div class="form-group">
+        <label>Weaknesses<br>What did not go so well this week?</label>
+        <input type="text" id= "halfsize" class="form-control" formControlName="weaknesses" required/>
+      </div>
+      <div class="form-group">
+        <label>Improvements<br>What could you do better next week?
+        </label>
+        <input type="text" id= "halfsize" class="form-control" formControlName="improvements" required/>
+      </div>  
+      <button type="submit" class="btn btn-primary" >Submit</button>
+    </form>
+  </div>

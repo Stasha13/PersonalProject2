@@ -1,0 +1,45 @@
+<div class="container">
+  <table class="table table-bordered table-inverse">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Solve Problem</th>
+      <th>Explain Concept</th>
+      <th>Present Ideas</th>
+      <th>Time Management</th>
+      <th>Strengths</th>
+      <th>Weaknesses</th>
+      <th>Improvements</th>
+    </tr>
+    <tr *ngFor="let feedback of feedback">
+      <td>
+        {{feedback.id}}
+      </td>
+      <td>
+        <a [routerLink]="['/admin/view', feedback.id]">{{feedback.name}}</a>
+      </td>
+      <td>
+        {{feedback.solveProblem}}
+      </td>
+      <td>
+        {{feedback.explainConcept}}
+      </td>
+      <td>
+        {{feedback.presentIdeas}}
+      </td>
+      <td>
+        {{feedback.timeManagement}}
+      </td>
+      <td>
+        {{feedback.strengths}}
+      </td>
+      <td>
+        {{feedback.weaknesses}}
+      </td>
+      <td>
+        {{feedback.improvements}}
+      </td>
+      <button id="remove" (click)="deleteRow(feedback.id)" >Delete</button>
+    </tr>
+  </table>
+</div>

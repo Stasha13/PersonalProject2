@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-rendering: optimizeLegibility;
+    position: relative;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Courier New', 'Courier New';
+    font-weight: normal;
+    font-size: 1.3em;
+    background: linear-gradient(150deg,#f584bc 15%,rgb(238, 237, 229) 70%,#df97df 94%);
+  }
+  
+  h1 {
+    font-size: 2.0em;
+    font-weight: bold;
+  }
+  
+  .table-bordered, .table-bordered td, .table-bordered th {
+    border: 1px solid #2F465D;
+    font-size: 0.9em;
+    padding: 3px;
+  }
+
+  .space {
+      height: 30px;
+      display: block;
+  }
+
+  #halfsize {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      
+  }
